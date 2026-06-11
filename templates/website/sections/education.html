@@ -1,0 +1,15 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if education %}
+    <ol class="timeline">
+      {% for entry in education %}
+        <li>
+          <span class="timeline-degree">{{ entry.degree }}</span>
+          <span class="timeline-inst">{{ entry.institution }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="empty-note">Education history not yet added.</p>
+  {% endif %}
+</section>

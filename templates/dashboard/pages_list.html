@@ -1,0 +1,46 @@
+{% extends "dashboard/base.html" %}
+
+{% block content %}
+<div class="table-container">
+  <div class="table-header">
+    <div class="table-title">Site Pages</div>
+    <a href="{% url 'dashboard_page_add' %}" class="table-action"><i class="fas fa-plus"></i> Add custom page</a>
+  </div>
+  <p class="form-hint">Rename, reorder, or hide pages. Changes apply to both the public site and this dashboard sidebar.</p>
+
+  {% if pages %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Label</th>
+          <th>URL</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th class="table-action-cell">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for page in pages %}
+          <tr>
+            <td>{{ page.sort_order }}</td>
+            <td><strong>{{ page.label }}</strong>{% if page.id == home_page_id %} <span class="badge-inline">Home</span>{% endif %}</td>
+            <td>{% if page.id == home_page_id %}/{% else %}/{{ page.slug }}/{% endif %}</td>
+            <td>{{ page.page_type }}</td>
+            <td>{% if page.is_enabled %}<span class="status-on">Visible</span>{% else %}<span class="status-off">Hidden</span>{% endif %}</td>
+            <td class="table-action-cell">
+              <a href="{% url 'dashboard_page_edit' page.id %}" class="table-action-btn" title="Edit"><i class="fas fa-edit"></i></a>
+              {% if page.page_type == 'custom' %}
+                <a href="{% url 'dashboard_page_content' page.id %}" class="table-action-btn" title="Content"><i class="fas fa-align-left"></i></a>
+                <a href="{% url 'dashboard_page_delete' page.id %}" class="table-action-btn" title="Delete" onclick="return confirm('Delete this page?');"><i class="fas fa-trash"></i></a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty-state">No pages yet. Run <code>python manage.py seed_pages</code>.</p>
+  {% endif %}
+</div>
+{% endblock %}

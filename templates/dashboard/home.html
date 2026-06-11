@@ -1,0 +1,66 @@
+{% extends "dashboard/base.html" %}
+
+{% block content %}
+<div class="dashboard-grid">
+  <div class="stat-card primary">
+    <div class="stat-header">
+      <div class="stat-title">News Items</div>
+      <div class="stat-icon primary"><i class="fas fa-newspaper"></i></div>
+    </div>
+    <div class="stat-value">{{ stats.news_items }}</div>
+    <div class="stat-change positive"><span>Supabase · news_items</span></div>
+  </div>
+  <div class="stat-card secondary">
+    <div class="stat-header">
+      <div class="stat-title">Publications</div>
+      <div class="stat-icon secondary"><i class="fas fa-book"></i></div>
+    </div>
+    <div class="stat-value">{{ stats.publications }}</div>
+    <div class="stat-change positive"><span>Supabase · publications</span></div>
+  </div>
+  <div class="stat-card success">
+    <div class="stat-header">
+      <div class="stat-title">Research Areas</div>
+      <div class="stat-icon success"><i class="fas fa-flask"></i></div>
+    </div>
+    <div class="stat-value">{{ stats.research_interests }}</div>
+    <div class="stat-change positive"><span>Supabase · research_interests</span></div>
+  </div>
+  <div class="stat-card warning">
+    <div class="stat-header">
+      <div class="stat-title">Awards</div>
+      <div class="stat-icon warning"><i class="fas fa-trophy"></i></div>
+    </div>
+    <div class="stat-value">{{ stats.awards }}</div>
+    <div class="stat-change positive"><span>Supabase · awards</span></div>
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-header">
+    <div class="chart-title">Content Overview</div>
+  </div>
+  <div class="chart-wrapper">
+    <canvas id="contentChart"></canvas>
+  </div>
+</div>
+
+{% if stats.profile %}
+<div class="table-container">
+  <div class="table-header">
+    <div class="table-title">Site Profile</div>
+    <a href="{% url 'dashboard_profile' %}" class="table-action">Edit profile</a>
+  </div>
+  <p><strong>{{ stats.profile.full_name }}</strong></p>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  window.dashboardChart = {
+    labels: {{ chart_labels_json|safe }},
+    values: {{ chart_values_json|safe }}
+  };
+</script>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "dashboard/base.html" %}
+
+{% block content %}
+<div class="form-card">
+  <div class="form-card-header">
+    <h2>Add Custom Page</h2>
+    <a href="{% url 'dashboard_pages_list' %}" class="table-action"><i class="fas fa-arrow-left"></i> All pages</a>
+  </div>
+  <p class="form-hint">Create a new page with your own content. It will appear in the public site and dashboard navigation.</p>
+
+  <form method="post" class="dashboard-form">
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="form-group{% if field.name == 'custom_content' %} form-group-full{% endif %}">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field }}
+        {% if field.help_text %}<p class="form-hint">{{ field.help_text }}</p>{% endif %}
+        {% if field.errors %}<div class="field-error">{{ field.errors.0 }}</div>{% endif %}
+      </div>
+    {% endfor %}
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Create Page</button>
+      <a href="{% url 'dashboard_pages_list' %}" class="btn btn-secondary">Cancel</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

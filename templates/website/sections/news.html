@@ -1,0 +1,19 @@
+{% load profile_extras %}
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if news %}
+    <table class="news-table">
+      <caption class="visually-hidden">Recent updates</caption>
+      <tbody>
+        {% for item in news %}
+          <tr>
+            <th scope="row"><time datetime="{{ item.event_date|news_datetime }}">{{ item.event_date|news_month }}</time></th>
+            <td>{{ item.body|safe }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty-note">No news items yet.</p>
+  {% endif %}
+</section>

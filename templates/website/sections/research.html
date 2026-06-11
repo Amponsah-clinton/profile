@@ -1,0 +1,12 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if research_interests %}
+    <ul class="research-list">
+      {% for interest in research_interests %}
+        <li>{% if interest.label %}{{ interest.label }}{% else %}{{ interest }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-note">Research interests not yet listed.</p>
+  {% endif %}
+</section>

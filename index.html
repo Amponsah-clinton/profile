@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage">
+  <title>Loading…</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <div class="identity">
+
+        <div class="portrait" aria-hidden="true">
+          <img id="profile-photo" src="" alt="" width="128" height="160">
+          <span class="portrait-initials" id="portrait-initials" aria-hidden="true"></span>
+        </div>
+
+        <div class="identity-text">
+          <h1 class="name" id="profile-name"></h1>
+          <p class="name-alt" id="profile-name-alt" style="display:none"></p>
+          <p class="title" id="profile-title"></p>
+
+          <address class="affiliation" id="profile-affiliation"></address>
+
+          <dl class="contact">
+            <div id="contact-office-row" style="display:none">
+              <dt>Office</dt>
+              <dd id="contact-office"></dd>
+            </div>
+            <div id="contact-phone-row" style="display:none">
+              <dt>Phone</dt>
+              <dd><a id="contact-phone-link" href="#"><span id="contact-phone"></span></a></dd>
+            </div>
+            <div id="contact-email-row" style="display:none">
+              <dt>Email</dt>
+              <dd><a id="contact-email-link" href="#"><span id="contact-email"></span></a></dd>
+            </div>
+          </dl>
+
+          <ul class="profiles" aria-label="External profiles" id="profile-links"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Body ───────────────────────────────────────────── -->
+  <div class="page-shell">
+    <nav class="sidebar" aria-label="Page sections">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="section-nav">
+        <span class="nav-toggle-label">Sections</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <ol class="section-nav" id="section-nav"></ol>
+    </nav>
+
+    <main id="main" class="content">
+      <p class="page-loading" id="page-loading">Loading…</p>
+    </main>
+  </div>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      Last updated <time id="last-updated">—</time>.
+      <a href="#top">Back to top</a> ·
+      <a href="admin/">Admin</a>
+    </p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

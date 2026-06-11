@@ -1,0 +1,32 @@
+{% load static profile_extras %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ profile.full_name }} — {{ profile.title }}, {{ profile.university }}.">
+  <title>{{ profile.full_name }} | {{ page_title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="{% static 'website/styles.css' %}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  {% include "website/includes/header.html" %}
+
+  <div class="page-shell">
+    {% include "website/includes/nav.html" %}
+
+    <main id="main" class="content">
+      {% block page_content %}{% endblock %}
+    </main>
+  </div>
+
+  {% include "website/includes/footer.html" %}
+
+  <script src="{% static 'website/script.js' %}" defer></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if service %}
+    <div class="service-grid">
+      {% for category, items in service.items %}
+        <div>
+          <h3 class="subsection-title">{{ category }}</h3>
+          <ul>
+            {% for item in items %}
+              <li>{{ item|safe }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-note">Service activities not yet listed.</p>
+  {% endif %}
+</section>

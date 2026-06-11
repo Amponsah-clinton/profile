@@ -1,0 +1,13 @@
+<section class="section section--callout page-section" tabindex="-1">
+  <h2 class="section-title"><span>Prospective Students</span></h2>
+  <div class="prose">
+    {% for paragraph in students_paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% empty %}
+      <p class="empty-note">Student recruiting information not yet added.</p>
+    {% endfor %}
+    {% if profile.students_email %}
+      <p><a href="mailto:{{ profile.students_email }}">{{ profile.students_email }}</a></p>
+    {% endif %}
+  </div>
+</section>

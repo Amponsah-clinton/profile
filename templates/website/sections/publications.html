@@ -1,0 +1,41 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if profile.scholar_url %}
+    <p class="section-note">
+      A complete list is available on
+      <a href="{{ profile.scholar_url }}" rel="noopener noreferrer">Google Scholar</a>.
+      Representative works are listed below.
+    </p>
+  {% endif %}
+
+  {% if publications_journal %}
+    <h3 class="subsection-title">Journal Articles</h3>
+    <ol class="pub-list">
+      {% for pub in publications_journal %}
+        {% include "website/includes/publication_item.html" %}
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+  {% if publications_conference %}
+    <h3 class="subsection-title">Conference Papers</h3>
+    <ol class="pub-list">
+      {% for pub in publications_conference %}
+        {% include "website/includes/publication_item.html" %}
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+  {% if publications_workshop %}
+    <h3 class="subsection-title">Workshop &amp; Demo Papers</h3>
+    <ol class="pub-list">
+      {% for pub in publications_workshop %}
+        {% include "website/includes/publication_item.html" %}
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+  {% if not publications_journal and not publications_conference and not publications_workshop %}
+    <p class="empty-note">Publications not yet listed.</p>
+  {% endif %}
+</section>

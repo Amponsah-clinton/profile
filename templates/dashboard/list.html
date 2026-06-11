@@ -1,0 +1,39 @@
+{% extends "dashboard/base.html" %}
+{% load profile_extras %}
+
+{% block content %}
+<div class="table-container">
+  <div class="table-header">
+    <div class="table-title">{{ title }}</div>
+    <a href="{% url add_url %}" class="table-action"><i class="fas fa-plus"></i> Add new</a>
+  </div>
+
+  {% if rows %}
+    <table class="table">
+      <thead>
+        <tr>
+          {% for key, label in columns %}
+            <th>{{ label }}</th>
+          {% endfor %}
+          <th class="table-action-cell">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+          <tr>
+            {% for key, label in columns %}
+              <td>{{ row|get_item:key }}</td>
+            {% endfor %}
+            <td class="table-action-cell">
+              <a href="{% url edit_url_name row.id %}" class="table-action-btn" title="Edit"><i class="fas fa-edit"></i></a>
+              <a href="{% url delete_url_name row.id %}" class="table-action-btn" title="Delete" onclick="return confirm('Delete this item?');"><i class="fas fa-trash"></i></a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty-state">No {{ title|lower }} entries yet. <a href="{% url add_url %}">Add one</a>.</p>
+  {% endif %}
+</div>
+{% endblock %}

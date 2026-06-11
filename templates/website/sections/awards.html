@@ -1,0 +1,13 @@
+{% load profile_extras %}
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if awards %}
+    <ul class="awards-list">
+      {% for award in awards %}
+        <li>{{ award|award_text }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-note">Honors and awards not yet listed.</p>
+  {% endif %}
+</section>

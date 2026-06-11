@@ -1,0 +1,14 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  <div class="prose">
+    {% for paragraph in custom_paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% empty %}
+      {% if custom_content %}
+        <div>{{ custom_content|linebreaks }}</div>
+      {% else %}
+        <p class="empty-note">This page has no content yet. Add content in the dashboard.</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

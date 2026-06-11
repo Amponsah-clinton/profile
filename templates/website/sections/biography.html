@@ -1,0 +1,10 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  <div class="prose">
+    {% for paragraph in bio_paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% empty %}
+      <p class="empty-note">Biography not yet added.</p>
+    {% endfor %}
+  </div>
+</section>

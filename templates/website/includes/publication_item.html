@@ -1,0 +1,11 @@
+{% load profile_extras %}
+<li id="{{ pub.pub_id|lower }}">
+  <span class="pub-id">{{ pub.pub_id|pub_label }}</span>
+  <span class="pub-body">
+    {% if pub.citation %}{{ pub.citation|safe }}{% endif %}
+    {% if pub.award_note %}<span class="pub-award">{{ pub.award_note }}</span>{% endif %}
+    {% if pub.pdf_url or pub.doi_url or pub.slides_url %}
+      <span class="pub-links">{% pub_links pub %}</span>
+    {% endif %}
+  </span>
+</li>

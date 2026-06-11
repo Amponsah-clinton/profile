@@ -1,0 +1,15 @@
+<section class="section page-section" tabindex="-1">
+  <h2 class="section-title"><span>{{ page_title }}</span></h2>
+  {% if teaching %}
+    <div class="prose">
+      {% if teaching_institution %}<p><strong>{{ teaching_institution }}</strong></p>{% endif %}
+      <ul>
+        {% for course in teaching %}
+          <li>{% if course.label %}{{ course.label }}{% else %}{{ course }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% else %}
+    <p class="empty-note">Teaching history not yet added.</p>
+  {% endif %}
+</section>
