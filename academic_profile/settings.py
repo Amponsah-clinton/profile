@@ -107,17 +107,12 @@ SUPABASE_SECRET_KEY = os.getenv('SUPABASE_SECRET_KEY', '')
 SUPABASE_STORAGE_BUCKET = os.getenv('SUPABASE_STORAGE_BUCKET', 'profile')
 SUPABASE_PROJECT_REF = os.getenv('SUPABASE_PROJECT_REF', '')
 
+import logging as _logging
+_log = _logging.getLogger(__name__)
 if not SUPABASE_URL or not SUPABASE_KEY or not SUPABASE_SERVICE_KEY:
-    print('\n' + '=' * 80)
-    print('WARNING: Supabase configuration is incomplete!')
-    print('=' * 80)
-    print(f"SUPABASE_URL: {'OK' if SUPABASE_URL else 'MISSING'}")
-    print(f"SUPABASE_KEY: {'OK' if SUPABASE_KEY and len(SUPABASE_KEY) > 100 else 'MISSING or INVALID'}")
-    print(f"SUPABASE_SERVICE_KEY: {'OK' if SUPABASE_SERVICE_KEY and len(SUPABASE_SERVICE_KEY) > 100 else 'MISSING or INVALID'}")
-    print('Set variables in .env — see Supabase Dashboard → Settings → API')
-    print('=' * 80 + '\n')
+    _log.warning('Supabase configuration is incomplete. Set SUPABASE_URL, SUPABASE_KEY, and SUPABASE_SERVICE_KEY in .env')
 elif len(SUPABASE_KEY) > 100 and len(SUPABASE_SERVICE_KEY) > 100:
-    print(f'[Supabase] Connected — project {SUPABASE_PROJECT_REF or SUPABASE_URL}')
+    _log.debug('Supabase configured — project %s', SUPABASE_PROJECT_REF or SUPABASE_URL)
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
