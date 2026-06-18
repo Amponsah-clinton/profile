@@ -1,111 +1,150 @@
 """Fallback content when Supabase rows are empty."""
 
 PROFILE = {
-    'full_name': 'Your Name',
-    'name_alt': '（姓名）',
-    'title': 'Assistant Professor',
-    'department_1': 'Department of Electrical and Computer Engineering',
-    'department_2': 'Department of Computer Science (Courtesy)',
-    'university': 'North Carolina State University',
-    'address': '890 Oval Dr, Raleigh, NC 27695',
-    'office': '3072 Engr Bldg II',
-    'phone': '(919) 515-5128',
-    'email': 'you@university.edu',
+    'full_name': 'Amponsah Clinton',
+    'name_alt': '',
+    'title': 'MPhil Candidate, Computer Engineering',
+    'department_1': 'Department of Computer & Electrical Engineering',
+    'department_2': '',
+    'university': 'University of Energy and Natural Resources',
+    'address': 'Sunyani, Ghana',
+    'office': '',
+    'phone': '0556105897',
+    'email': 'clinton.amponsah001@gmail.com',
     'photo_url': '',
     'biography': (
-        'I am an Assistant Professor in the Department of Electrical and Computer Engineering '
-        'at North Carolina State University, where I direct the Intelligent Wireless Networking '
-        '(iWN) Laboratory. My work addresses software-defined wireless systems, intelligent edge '
-        'computing, and learning-driven network resource management, with applications in beyond-5G '
-        'networks, Internet of Things deployments, and cyber-physical systems.\n\n'
-        'Previously, I held postdoctoral and research appointments at institutions in the United '
-        'States. I received the Ph.D. degree in Electrical and Computer Engineering from the '
-        'Georgia Institute of Technology, and the B.S. and M.S. degrees in Electrical Engineering '
-        'from the National Taiwan University.'
+        'I am a research-oriented Computer Engineer with interests in computer networking, '
+        'artificial intelligence, and privacy. I am currently pursuing an MPhil in Computer '
+        'Engineering at the University of Energy and Natural Resources (UENR), Sunyani, where my '
+        'work contributes to research in secure communication systems and intelligent technologies.\n\n'
+        'Alongside my graduate studies, I work as a Researcher and Software Developer at Metascholar '
+        'Consult Limited, building scalable software systems and conducting research in AI, digital '
+        'systems, and secure computing. I previously served as a Teaching and Research Assistant in '
+        'the IoT & DataCom Lab at UENR. I am experienced in academic writing, scholarly collaboration, '
+        'undergraduate instruction, and software development, and I am passionate about developing '
+        'efficient, intelligent, and privacy-aware computing systems through research and innovation.'
     ),
-    'scholar_url': 'https://scholar.google.com/',
-    'linkedin_url': 'https://www.linkedin.com/',
-    'github_url': 'https://github.com/',
-    'orcid_url': 'https://orcid.org/',
+    'scholar_url': '',
+    'linkedin_url': '',
+    'github_url': 'https://github.com/Amponsah-clinton',
+    'orcid_url': 'https://orcid.org/0009-0006-8414-9794',
     'cv_url': '',
     'cv_filename': '',
-    'researchgate_url': 'https://www.researchgate.net/',
-    'students_text': (
-        'I am recruiting self-motivated Ph.D. students in wireless communications and networking. '
-        'Current openings emphasize 6G radio and intelligent networking, vehicular edge computing, '
-        'wireless federated learning, and hardware/software co-design. A solid mathematical background '
-        'is expected; prior experience in wireless communications, computer networks, or '
-        'electromagnetics is welcome.\n\n'
-        'To inquire, send your CV and transcripts by email.'
-    ),
-    'students_email': 'lab@university.edu',
+    'researchgate_url': '',
+    'students_text': '',
+    'students_email': '',
 }
 
 NEWS = [
-    {'event_date': '2025-06-01', 'body': 'Paper on federated learning for multi-mission UAV operations accepted for presentation at AFRL Summer VFRP.'},
-    {'event_date': '2025-03-01', 'body': 'Two papers accepted at IEEE INFOCOM 2025.'},
-    {'event_date': '2024-11-01', 'body': 'Runner-up, AFRL Software Defined Radio Challenge, for distributed multimedia transmission.'},
-    {'event_date': '2024-07-01', 'body': 'Journal article on O-RAN resource management published in <em>IEEE Transactions on Mobile Computing</em>.'},
-    {'event_date': '2024-05-01', 'body': 'Received Faculty Research Grant from NASA North Carolina Space Grant for 6G serverless computing architecture.'},
+    {'event_date': '2026-02-01', 'body': 'Serving as a reviewer for the <em>Journal of Electrical Systems and Information Technology</em> (Springer Nature).'},
+    {'event_date': '2026-01-01', 'body': 'Began the M.Phil. in Computer Engineering at the University of Energy and Natural Resources.'},
+    {'event_date': '2025-12-01', 'body': 'Co-authored &ldquo;Examining the Role of AI-Based Learning Tools in Higher Education&rdquo; in <em>SAP Social AI</em>. <a href="https://doi.org/10.62486/sai202529" rel="noopener noreferrer">https://doi.org/10.62486/sai202529</a>'},
+    {'event_date': '2025-11-01', 'body': 'Two papers accepted for publication in the <em>South Asian Journal of AI</em>.'},
+    {'event_date': '2025-10-01', 'body': 'Joined Metascholar Consult Limited as a Researcher &amp; Software Developer.'},
 ]
 
 RESEARCH = [
-    'Wireless software-defined networking and open RAN architectures',
-    'Intelligent edge computing and network slicing',
-    'Federated and distributed machine learning over wireless links',
-    'Resource management for vehicular and UAV communication systems',
-    'Underground and underwater wireless communications',
-    'Security and reliability in IoT and cyber-physical systems',
+    'Computer networking and secure communication systems',
+    'Artificial intelligence and intelligent systems',
+    'Privacy and privacy-aware computing',
+    'Lightweight cryptography for secure IoT data transmission',
+    'AI ethics, security, fairness, and bias mitigation',
+    'Network attacks, vulnerabilities, and secure system design',
 ]
 
 EDUCATION = [
-    {'degree': 'Ph.D., Electrical and Computer Engineering', 'institution': 'Georgia Institute of Technology, Atlanta, GA'},
-    {'degree': 'M.S., Communications Engineering', 'institution': 'National Taiwan University, Taipei, Taiwan'},
-    {'degree': 'B.S., Electrical Engineering', 'institution': 'National Taiwan University, Taipei, Taiwan'},
+    {'degree': 'M.Phil. in Computer Engineering, 2026–Present', 'institution': 'University of Energy and Natural Resources, Sunyani, Ghana'},
+    {'degree': 'B.Sc. in Computer Engineering, 2019–2023', 'institution': 'University of Energy and Natural Resources, Sunyani, Ghana'},
+    {'degree': 'WASSCE, 2013–2016', 'institution': 'Konongo Odumase Senior High School, Konongo, Ghana'},
 ]
 
 PUBLICATIONS_JOURNAL = [
-    {'pub_id': 'J5', 'citation': '<strong>Your Name</strong>, A. Collaborator, and B. Collaborator, &ldquo;DRL-ORAN Platform for Large-Scale Networking Resource Management,&rdquo; <em>IEEE Transactions on Mobile Computing</em>, vol. 23, no. 8, pp. 7421&ndash;7436, 2024.', 'pdf_url': '#', 'doi_url': '#', 'award_note': ''},
-    {'pub_id': 'J4', 'citation': 'C. Collaborator, <strong>Your Name</strong>, and D. Collaborator, &ldquo;QoS-Aware Adaptive Routing in Multi-Layer Hierarchical SDNs: A Reinforcement Learning Approach,&rdquo; <em>IEEE Transactions on Network and Service Management</em>, 2020.', 'pdf_url': '#', 'award_note': ''},
-    {'pub_id': 'J3', 'citation': '<strong>Your Name</strong> and E. Collaborator, &ldquo;Application-Defined Networks for AI Systems at the Edge,&rdquo; <em>ACM Transactions on Sensor Networks</em>, 2019.', 'pdf_url': '#', 'award_note': ''},
+    {
+        'pub_id': 'J1',
+        'citation': (
+            'A. Atianashie M., M. K. Kuffour, B. Kyiewu, and <strong>C. Amponsah</strong>, '
+            '&ldquo;Examining the Role of AI-Based Learning Tools in Higher Education: A Critical Synthesis '
+            'of Effects on Student Performance and Engagement,&rdquo; <em>SAP Social AI</em>, 2025. '
+            '<a href="https://doi.org/10.62486/sai202529" rel="noopener noreferrer">https://doi.org/10.62486/sai202529</a>'
+        ),
+        'pdf_url': '', 'doi_url': '', 'award_note': '', 'year': 2025,
+    },
+    {
+        'pub_id': 'J2',
+        'citation': (
+            '<strong>C. Amponsah</strong>, &ldquo;Who Bears the Cost of Fairness? Empirical Evidence from a '
+            'Cross-Regional Bias Detection and Mitigation Pipeline in Machine Learning,&rdquo; '
+            '<em>South Asian Journal of AI</em>.'
+        ),
+        'pdf_url': '', 'doi_url': '', 'award_note': 'Accepted / In Press', 'year': 2026,
+    },
+    {
+        'pub_id': 'J3',
+        'citation': (
+            '<strong>C. Amponsah</strong>, &ldquo;Invisible Algorithms, Visible Inequality: Uncovering the '
+            'Social Consequences of AI-Driven Decision Systems,&rdquo; <em>South Asian Journal of AI</em>.'
+        ),
+        'pdf_url': '', 'doi_url': '', 'award_note': 'Accepted / In Press', 'year': 2026,
+    },
 ]
 
-PUBLICATIONS_CONFERENCE = [
-    {'pub_id': 'C8', 'citation': '<strong>Your Name</strong>, F. Collaborator, and G. Collaborator, &ldquo;Federated Learning over Open RAN: Architecture and Prototype,&rdquo; in <em>Proc. IEEE INFOCOM</em>, 2025.', 'pdf_url': '#', 'slides_url': '#', 'award_note': ''},
-    {'pub_id': 'C7', 'citation': 'H. Collaborator and <strong>Your Name</strong>, &ldquo;Signal Interference Management in O-RAN xAPP Design,&rdquo; in <em>Proc. IEEE ICC</em>, 2021.', 'pdf_url': '#', 'award_note': ''},
-    {'pub_id': 'C6', 'citation': '<strong>Your Name</strong>, I. Collaborator, and J. Collaborator, &ldquo;Home Network Intelligent Scheduling Control,&rdquo; in <em>Proc. IEEE GLOBECOM</em>, 2021.', 'pdf_url': '#', 'award_note': 'Best Paper Award Runner-up'},
-]
+PUBLICATIONS_CONFERENCE = []
 
-PUBLICATIONS_WORKSHOP = [
-    {'pub_id': 'W1', 'citation': '<strong>Your Name</strong> and K. Collaborator, &ldquo;Demo: A Prototype Platform for 5G Edge Analytics,&rdquo; in <em>Proc. ACM MobiCom Demo</em>, 2022.', 'pdf_url': '#', 'award_note': ''},
-]
+PUBLICATIONS_WORKSHOP = []
 
 TEACHING = [
-    'ECE 566 — Wireless Networking and Mobile Computing (Fall 2024, Spring 2025)',
-    'ECE 792 — Special Topics: Open RAN and Network Softwarization (Spring 2024)',
-    'ECE 302 — Introduction to Communication Systems (Fall 2023)',
+    'Computer Literacy (CENG 101)',
+    'Information Theory (CENG 201)',
+    'Secure Network Systems (CENG 413)',
 ]
 
+# Repurposed as "Certifications" (see seed_content / site_pages rename).
 AWARDS = [
-    '<strong>Awardee</strong>, Summer Visiting Faculty Research Program (VFRP), Air Force Research Laboratory, 2025.',
-    '<strong>Runner-up</strong>, Software Defined Radio Challenge, AFRL, 2024.',
-    '<strong>AI4AI Research Award</strong>, Meta, 2022.',
-    '<strong>Faculty Research Grant</strong>, NASA North Carolina Space Grant, 2022.',
-    '<strong>Distinguished TPC Member Award</strong>, IEEE INFOCOM, 2020.',
-    '<strong>Researcher of the Year</strong>, Broadband Wireless Networking Laboratory, Georgia Institute of Technology, 2015.',
+    '<strong>Huawei Routing &amp; Switching Associate</strong> &mdash; Huawei',
+    '<strong>Understanding Research Methods</strong> &mdash; University of London. <a href="https://coursera.org/share/b127257498ae8cdd9d7fea30ea4d22f1" rel="noopener noreferrer">View certificate</a>',
+    '<strong>Foundations of UX Design</strong> &mdash; Google. <a href="https://coursera.org/share/5c61189e35553b4aacd075c9d2798098" rel="noopener noreferrer">View certificate</a>',
+    '<strong>Data, Security, and Privacy</strong> &mdash; University of California, Irvine. <a href="https://coursera.org/share/bac9fe877747022cb54941aa0a451dde" rel="noopener noreferrer">View certificate</a>',
+    '<strong>Django Web Framework</strong> &mdash; Meta. <a href="https://coursera.org/share/e0bd8ffeb766fa196f1f4ce6a8d5ccff" rel="noopener noreferrer">View certificate</a>',
+    '<strong>Programming for Everybody</strong> &mdash; University of Michigan. <a href="https://coursera.org/share/03d2db62a37ec9dc443c891874728752" rel="noopener noreferrer">View certificate</a>',
 ]
 
 SERVICE = {
-    'Technical Program Committees': [
-        'IEEE INFOCOM (2020&ndash;present; Distinguished TPC Member, 2020)',
-        'IEEE ICC, IEEE GLOBECOM, ACM MobiCom',
+    'Peer Review': [
+        'Reviewer, <em>Journal of Electrical Systems and Information Technology</em>, Springer Nature (2026)',
     ],
-    'Journal Reviewing': [
-        '<em>IEEE/ACM Transactions on Networking</em>',
-        '<em>IEEE Transactions on Mobile Computing</em>',
-        '<em>IEEE Transactions on Wireless Communications</em>',
+    'Community Engagement': [
+        'Co-Founder, <strong>Veritas Foundation</strong>, Kumasi (2021&ndash;Present) &mdash; educational support and mentorship for underprivileged students.',
     ],
 }
+
+# Custom-page content (rendered as escaped plain-text paragraphs; blank line = new paragraph).
+EXPERIENCE_CONTENT = (
+    '<strong>Researcher &amp; Software Developer</strong> — Metascholar Consult Limited, Sunyani, Ghana (Oct 2025 – Present). '
+    'Conducting academic and industry-oriented research in artificial intelligence, digital systems, and '
+    'secure computing; designing and developing scalable software systems and web platforms; supporting '
+    'literature reviews, technical writing, data analysis, and the preparation of manuscripts and research '
+    'proposals; and building backends, database integrations, and APIs using Python, Django, and JavaScript.\n\n'
+    '<strong>Teaching &amp; Research Assistant, IoT &amp; DataCom Lab (National Service)</strong> — University of Energy and Natural '
+    'Resources, Sunyani, Ghana (May 2023 – Sep 2025). Assisted in teaching undergraduate courses including '
+    'Computer Literacy (CENG 101), Information Theory (CENG 201), and Secure Network Systems (CENG 413); '
+    'facilitated tutorials, laboratory sessions, and assignments; and supported faculty research, data '
+    'analysis, and technical documentation.\n\n'
+    '<strong>Researcher (Internship)</strong> — HackScience Technologies, Accra, Ghana (Aug 2022 – Dec 2023). Researched the '
+    'ethical and security implications of AI systems; investigated AI-related network attacks, vulnerabilities, '
+    'and secure system practices; and contributed to software innovation and collaborative research projects.\n\n'
+    '<strong>Engineering Laboratory Assistant</strong> — IoT &amp; DataCom Lab, University of Energy and Natural Resources, Sunyani, '
+    'Ghana (Feb 2022 – Jul 2023). Supported practical engineering laboratory sessions, configured networking '
+    'devices, troubleshot technical issues, and maintained laboratory equipment.'
+)
+
+PROJECTS_CONTENT = (
+    '<strong>Swarm Robots in Environmental Monitoring</strong> — RVIS Lab, UENR (2023). Participated in the design and '
+    'evaluation of intelligent robotic systems for environmental data collection and monitoring.\n\n'
+    '<strong>AI-Based Web Platform for Job Listing in Ghana</strong> (2023). Developed an intelligent web platform to support '
+    'employment opportunities and digital recruitment services in Ghana.\n\n'
+    '<strong>Lightweight Cryptography for Secure IoT Data Transmission</strong> — IoT &amp; DataCom Lab, UENR (2022). Research '
+    'focused on efficient cryptographic mechanisms for secure, low-resource IoT environments.'
+)
 
 SECTIONS = [
     {'id': 'biography', 'label': 'Biography', 'url_name': 'biography'},
@@ -114,6 +153,6 @@ SECTIONS = [
     {'id': 'education', 'label': 'Education', 'url_name': 'education'},
     {'id': 'publications', 'label': 'Publications', 'url_name': 'publications'},
     {'id': 'teaching', 'label': 'Teaching', 'url_name': 'teaching'},
-    {'id': 'awards', 'label': 'Honors & Awards', 'url_name': 'awards'},
+    {'id': 'awards', 'label': 'Certifications', 'url_name': 'awards'},
     {'id': 'service', 'label': 'Service', 'url_name': 'service'},
 ]
