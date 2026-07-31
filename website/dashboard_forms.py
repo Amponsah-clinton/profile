@@ -84,7 +84,7 @@ class EducationForm(forms.Form):
 
 class PublicationForm(forms.Form):
     pub_id = forms.CharField(label='ID (e.g. J1)', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    pub_type = forms.ChoiceField(choices=[('journal', 'Journal'), ('conference', 'Conference'), ('workshop', 'Workshop')], widget=forms.Select(attrs={'class': 'form-input'}))
+    pub_type = forms.ChoiceField(choices=[('journal', 'Journal'), ('conference', 'Conference'), ('workshop', 'Preprint')], widget=forms.Select(attrs={'class': 'form-input'}))
     citation = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-input', 'rows': 4}))
     pdf_url = forms.URLField(required=False, widget=forms.URLInput(attrs={'class': 'form-input'}))
     doi_url = forms.URLField(required=False, widget=forms.URLInput(attrs={'class': 'form-input'}))

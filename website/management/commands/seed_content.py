@@ -103,6 +103,8 @@ class Command(BaseCommand):
         custom_pages = [
             ('experience', 'Experience', 'fa-briefcase', 45, defaults.EXPERIENCE_CONTENT),
             ('projects', 'Projects', 'fa-diagram-project', 46, defaults.PROJECTS_CONTENT),
+            ('skills', 'Skills', 'fa-screwdriver-wrench', 47, defaults.SKILLS_CONTENT),
+            ('references', 'References', 'fa-address-book', 48, defaults.REFERENCES_CONTENT),
         ]
         for slug, label, icon, sort_order, content in custom_pages:
             existing = pages_db.get_site_page_by_slug(slug, admin=True)

@@ -607,7 +607,7 @@ function renderPublicationsEditor() {
   <div class="pub-tabs">
     <button class="pub-tab ${activePubTab==='journal'    ? 'active' : ''}" data-tab="journal">Journals</button>
     <button class="pub-tab ${activePubTab==='conference' ? 'active' : ''}" data-tab="conference">Conferences</button>
-    <button class="pub-tab ${activePubTab==='workshop'   ? 'active' : ''}" data-tab="workshop">Workshops</button>
+    <button class="pub-tab ${activePubTab==='workshop'   ? 'active' : ''}" data-tab="workshop">Preprints</button>
   </div>
   ${renderTab('journal')}${renderTab('conference')}${renderTab('workshop')}`;
 }

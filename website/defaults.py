@@ -13,16 +13,30 @@ PROFILE = {
     'email': 'clinton.amponsah001@gmail.com',
     'photo_url': '',
     'biography': (
-        'I am a research-oriented Computer Engineer with interests in computer networking, '
-        'artificial intelligence, and privacy. I am currently pursuing an MPhil in Computer '
-        'Engineering at the University of Energy and Natural Resources (UENR), Sunyani, where my '
-        'work contributes to research in secure communication systems and intelligent technologies.\n\n'
-        'Alongside my graduate studies, I work as a Researcher and Software Developer at Metascholar '
-        'Consult Limited, building scalable software systems and conducting research in AI, digital '
-        'systems, and secure computing. I previously served as a Teaching and Research Assistant in '
-        'the IoT & DataCom Lab at UENR. I am experienced in academic writing, scholarly collaboration, '
-        'undergraduate instruction, and software development, and I am passionate about developing '
-        'efficient, intelligent, and privacy-aware computing systems through research and innovation.'
+        'I am a research-oriented Computer Engineer with interests in intelligent network systems, '
+        'energy-efficient computing, artificial intelligence, and privacy-preserving technologies. My work '
+        'is driven by a passion for building adaptive, secure, and sustainable network solutions that improve '
+        'performance, reduce energy consumption, and protect user data. I am currently pursuing an M.Phil. in '
+        'Computer Engineering at the University of Energy and Natural Resources (UENR), Sunyani, Ghana, where '
+        'my thesis, &ldquo;Deep Q-Network-Based Energy-Aware Traffic Engineering in Software-Defined '
+        'Networks,&rdquo; develops a deep reinforcement learning framework that jointly optimizes routing and '
+        'network-device activation to reduce network energy consumption while maintaining acceptable '
+        'throughput, latency, packet loss, and overall quality of service under dynamic traffic conditions.\n\n'
+        'From October 2025 to June 2026, I served as a Researcher and Software Developer at Metascholar '
+        'Consult Limited, where I conducted AI and secure-computing research, designed scalable software '
+        'systems, and supported the preparation of academic manuscripts and research proposals. Earlier, I '
+        'completed national service as a Teaching and Research Assistant in the IoT & DataCom Lab at UENR '
+        '(2023&ndash;2025), assisting in the instruction of Computer Literacy, Information Theory, and Secure '
+        'Network Systems, and worked as a research intern at HackScience Technologies investigating '
+        'AI-related network attacks and the ethical and security implications of intelligent systems.\n\n'
+        'My research has produced publications in venues including the Journal of Electrical Systems and '
+        'Information Technology, SAP Social AI, and Anatolian Science, an accepted paper at the 2026 IEEE '
+        'Global Emerging Technologies Conference (IEEE-iGET), and preprints on Research Square spanning '
+        'multi-robot coordination and cloud-native security. I serve as a peer reviewer for the Journal of '
+        'Electrical Systems and Information Technology (Springer Nature) and co-founded the Veritas '
+        'Foundation, through which I support educational mentorship for underprivileged students in Kumasi, '
+        'Ghana. I am proficient in Python, Java, C++, R, and MATLAB, and experienced in full-stack web '
+        'development with Django and JavaScript.'
     ),
     'scholar_url': '',
     'linkedin_url': '',
@@ -36,19 +50,26 @@ PROFILE = {
 }
 
 NEWS = [
+    {'event_date': '2026-07-01', 'body': 'Published &ldquo;Communication-Efficient Networking for Distributed Agentic AI: A Systematic Review&rdquo; in <em>Anatolian Science &mdash; Journal of Computer Science</em>. <a href="https://doi.org/10.53770/bbd.2002408" rel="noopener noreferrer">https://doi.org/10.53770/bbd.2002408</a>'},
+    {'event_date': '2026-07-01', 'body': 'Co-authored &ldquo;Adaptive resource allocation in dynamic wireless environments: a systematic review&rdquo; in <em>Journal of Electrical Systems and Information Technology</em>, 13, 76. <a href="https://doi.org/10.1186/s43067-026-00378-2" rel="noopener noreferrer">https://doi.org/10.1186/s43067-026-00378-2</a>'},
+    {'event_date': '2026-06-24', 'body': 'Posted two preprints on Research Square: &ldquo;Learning safe multi-robot coordination in industrial cyber-physical systems&rdquo; and &ldquo;Runtime detection of attacks and misconfigurations in cloud-native Kubernetes environments using eBPF network telemetry.&rdquo;'},
+    {'event_date': '2026-06-01', 'body': 'Paper accepted for presentation at the 2026 IEEE Global Emerging Technologies Conference (IEEE&ndash;iGET): Empowering Future Engineers, Irvine, California, October 21&ndash;25, 2026.'},
+    {'event_date': '2026-05-01', 'body': 'Paper accepted for presentation at the IEEE 4th International Conference on Artificial Intelligence, Blockchain and Internet of Things (AIBThings), Central Michigan University, United States, September 5&ndash;6, 2026.'},
     {'event_date': '2026-02-01', 'body': 'Serving as a reviewer for the <em>Journal of Electrical Systems and Information Technology</em> (Springer Nature).'},
     {'event_date': '2026-01-01', 'body': 'Began the M.Phil. in Computer Engineering at the University of Energy and Natural Resources.'},
     {'event_date': '2025-12-01', 'body': 'Co-authored &ldquo;Examining the Role of AI-Based Learning Tools in Higher Education&rdquo; in <em>SAP Social AI</em>. <a href="https://doi.org/10.62486/sai202529" rel="noopener noreferrer">https://doi.org/10.62486/sai202529</a>'},
-    {'event_date': '2025-11-01', 'body': 'Two papers accepted for publication in the <em>South Asian Journal of AI</em>.'},
+    {'event_date': '2025-11-01', 'body': 'Paper accepted for publication in the <em>South Asian Journal of AI</em>: &ldquo;Who Bears the Cost of Fairness? Empirical Evidence from a Cross-Regional Bias Detection and Mitigation Pipeline in Machine Learning.&rdquo;'},
     {'event_date': '2025-10-01', 'body': 'Joined Metascholar Consult Limited as a Researcher &amp; Software Developer.'},
 ]
 
 RESEARCH = [
-    'Computer networking and secure communication systems',
+    'Software-defined networking and intelligent traffic engineering',
+    'Deep reinforcement learning for energy-aware network optimization',
+    'Energy-efficient and sustainable computing systems',
     'Artificial intelligence and intelligent systems',
-    'Privacy and privacy-aware computing',
+    'Privacy-preserving and secure computing technologies',
     'Lightweight cryptography for secure IoT data transmission',
-    'AI ethics, security, fairness, and bias mitigation',
+    'AI ethics, fairness, and bias mitigation in machine learning',
     'Network attacks, vulnerabilities, and secure system design',
 ]
 
@@ -62,15 +83,32 @@ PUBLICATIONS_JOURNAL = [
     {
         'pub_id': 'J1',
         'citation': (
-            'A. Atianashie M., M. K. Kuffour, B. Kyiewu, and <strong>C. Amponsah</strong>, '
-            '&ldquo;Examining the Role of AI-Based Learning Tools in Higher Education: A Critical Synthesis '
-            'of Effects on Student Performance and Engagement,&rdquo; <em>SAP Social AI</em>, 2025. '
-            '<a href="https://doi.org/10.62486/sai202529" rel="noopener noreferrer">https://doi.org/10.62486/sai202529</a>'
+            '<strong>C. Amponsah</strong>, &ldquo;Communication-Efficient Networking for Distributed Agentic '
+            'AI: A Systematic Review,&rdquo; <em>Anatolian Science &mdash; Journal of Computer Science</em>, '
+            'Vol. 2026.'
         ),
-        'pdf_url': '', 'doi_url': '', 'award_note': '', 'year': 2025,
+        'pdf_url': '', 'doi_url': 'https://doi.org/10.53770/bbd.2002408', 'award_note': '', 'year': 2026,
     },
     {
         'pub_id': 'J2',
+        'citation': (
+            '<strong>Clinton, A.</strong>, Tweneboah-Koduah, S., Owusu, J., &amp; Kyiewu, B. (2026). '
+            '&ldquo;Adaptive resource allocation in dynamic wireless environments: a systematic '
+            'review,&rdquo; <em>Journal of Electrical Systems and Information Technology</em>, 13, 76.'
+        ),
+        'pdf_url': '', 'doi_url': 'https://doi.org/10.1186/s43067-026-00378-2', 'award_note': '', 'year': 2026,
+    },
+    {
+        'pub_id': 'J3',
+        'citation': (
+            'A. Atianashie, M. K. Kuffour, B. Kyiewu, and <strong>C. Amponsah</strong>, &ldquo;Examining the '
+            'Role of AI-Based Learning Tools in Higher Education: A Critical Synthesis of Effects on Student '
+            'Performance and Engagement,&rdquo; <em>SAP Social AI</em>, 2025.'
+        ),
+        'pdf_url': '', 'doi_url': 'https://doi.org/10.62486/sai202529', 'award_note': '', 'year': 2025,
+    },
+    {
+        'pub_id': 'J4',
         'citation': (
             '<strong>C. Amponsah</strong>, &ldquo;Who Bears the Cost of Fairness? Empirical Evidence from a '
             'Cross-Regional Bias Detection and Mitigation Pipeline in Machine Learning,&rdquo; '
@@ -78,19 +116,54 @@ PUBLICATIONS_JOURNAL = [
         ),
         'pdf_url': '', 'doi_url': '', 'award_note': 'Accepted / In Press', 'year': 2026,
     },
+]
+
+PUBLICATIONS_CONFERENCE = [
     {
-        'pub_id': 'J3',
+        'pub_id': 'C1',
         'citation': (
-            '<strong>C. Amponsah</strong>, &ldquo;Invisible Algorithms, Visible Inequality: Uncovering the '
-            'Social Consequences of AI-Driven Decision Systems,&rdquo; <em>South Asian Journal of AI</em>.'
+            '<strong>Amponsah, C.</strong>, Owusu, J., Kyiewu, B., Oppong-Asante, A., Twenewaa, M., &amp; '
+            'Bessa-Simons, L. (2026). &ldquo;Deep reinforcement learning for city-scale adaptive traffic '
+            'signal coordination in mixed human&ndash;autonomous road networks,&rdquo; paper accepted for '
+            'presentation at the 2026 IEEE Global Emerging Technologies Conference: IEEE-iGET&mdash;Empowering '
+            'Future Engineers, Irvine, California, United States, October 21&ndash;25, 2026.'
         ),
-        'pdf_url': '', 'doi_url': '', 'award_note': 'Accepted / In Press', 'year': 2026,
+        'pdf_url': '', 'doi_url': '', 'award_note': '', 'year': 2026,
+    },
+    {
+        'pub_id': 'C2',
+        'citation': (
+            '<strong>Amponsah, C.</strong>, Kyiewu, B., Oppong-Asante, A., &amp; Bessa-Simons, L. (2026). '
+            '&ldquo;Integrated sensing and communication for 6G-enabled IoT systems,&rdquo; paper accepted '
+            'for presentation at the IEEE 4th International Conference on Artificial Intelligence, Blockchain '
+            'and Internet of Things (AIBThings), Central Michigan University, United States, '
+            'September 5&ndash;6, 2026.'
+        ),
+        'pdf_url': '', 'doi_url': '', 'award_note': '', 'year': 2026,
     },
 ]
 
-PUBLICATIONS_CONFERENCE = []
-
-PUBLICATIONS_WORKSHOP = []
+# Repurposed as "Preprints" (see seed_content / site_pages heading).
+PUBLICATIONS_WORKSHOP = [
+    {
+        'pub_id': 'P1',
+        'citation': (
+            'Kyiewu, B., <strong>Amponsah, C.</strong>, Bessa-Simons, L., Oppong-Asante, A., &amp; Yiadom, '
+            'C. B. (2026). &ldquo;Learning safe multi-robot coordination in industrial cyber-physical '
+            'systems,&rdquo; <em>Research Square</em> (preprint). Posted June 24, 2026.'
+        ),
+        'pdf_url': '', 'doi_url': 'https://doi.org/10.21203/rs.3.rs9925827/v1', 'award_note': '', 'year': 2026,
+    },
+    {
+        'pub_id': 'P2',
+        'citation': (
+            'Oppong-Asante, A., Kyiewu, B., <strong>Amponsah, C.</strong>, Bessa-Simons, L., &amp; Boakye '
+            'Yiadom, C. (2026). &ldquo;Runtime detection of attacks and misconfigurations in cloud-native '
+            'Kubernetes environments using eBPF network telemetry,&rdquo; <em>Research Square</em> (preprint).'
+        ),
+        'pdf_url': '', 'doi_url': 'https://doi.org/10.21203/rs.3.rs-9883128/v1', 'award_note': '', 'year': 2026,
+    },
+]
 
 TEACHING = [
     'Computer Literacy (CENG 101)',
@@ -119,11 +192,11 @@ SERVICE = {
 
 # Custom-page content (rendered as escaped plain-text paragraphs; blank line = new paragraph).
 EXPERIENCE_CONTENT = (
-    '<strong>Researcher &amp; Software Developer</strong> — Metascholar Consult Limited, Sunyani, Ghana (Oct 2025 – Present). '
-    'Conducting academic and industry-oriented research in artificial intelligence, digital systems, and '
-    'secure computing; designing and developing scalable software systems and web platforms; supporting '
+    '<strong>Researcher &amp; Software Developer</strong> — Metascholar Consult Limited, Sunyani, Ghana (Oct 2025 – Jun 2026). '
+    'Conducted academic and industry-oriented research in artificial intelligence, digital systems, and '
+    'secure computing; designed and developed scalable software systems and web platforms; supported '
     'literature reviews, technical writing, data analysis, and the preparation of manuscripts and research '
-    'proposals; and building backends, database integrations, and APIs using Python, Django, and JavaScript.\n\n'
+    'proposals; and built backends, database integrations, and APIs using Python, Django, and JavaScript.\n\n'
     '<strong>Teaching &amp; Research Assistant, IoT &amp; DataCom Lab (National Service)</strong> — University of Energy and Natural '
     'Resources, Sunyani, Ghana (May 2023 – Sep 2025). Assisted in teaching undergraduate courses including '
     'Computer Literacy (CENG 101), Information Theory (CENG 201), and Secure Network Systems (CENG 413); '
@@ -144,6 +217,23 @@ PROJECTS_CONTENT = (
     'employment opportunities and digital recruitment services in Ghana.\n\n'
     '<strong>Lightweight Cryptography for Secure IoT Data Transmission</strong> — IoT &amp; DataCom Lab, UENR (2022). Research '
     'focused on efficient cryptographic mechanisms for secure, low-resource IoT environments.'
+)
+
+SKILLS_CONTENT = (
+    '<strong>Technical Skills</strong> — Python, Java, C++, R, MATLAB, Full-Stack Web Development (Django, '
+    'JavaScript), LaTeX, SPSS, Visual Paradigm, Photoshop.\n\n'
+    '<strong>Languages</strong> — English, French.'
+)
+
+REFERENCES_CONTENT = (
+    '<strong>Prof. Benjamin Asubam Weyori</strong>, Head of Department — Department of Computer & Electrical '
+    'Engineering, University of Energy and Natural Resources. '
+    '<a href="mailto:benjamin.weyori@uenr.edu.gh">benjamin.weyori@uenr.edu.gh</a>\n\n'
+    '<strong>Dr. Samuel Tweneboah-Koduah</strong>, Senior Lecturer — Department of Computer & Electrical '
+    'Engineering, University of Energy and Natural Resources, Ghana. '
+    '<a href="mailto:samuel.tweneboahkoduah@uenr.edu.gh">samuel.tweneboahkoduah@uenr.edu.gh</a>\n\n'
+    '<strong>Joseph Owusu</strong>, Lecturer — Department of Computer & Electrical Engineering, University of '
+    'Energy and Natural Resources. <a href="mailto:joseph.owusu@uenr.edu">joseph.owusu@uenr.edu</a>'
 )
 
 SECTIONS = [
